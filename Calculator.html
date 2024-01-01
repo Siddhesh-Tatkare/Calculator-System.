@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caluator</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        h1{
+            background-color: burlywood;
+            width: 250px;
+            margin: auto;
+            padding: 2px;
+        }
+        .center{
+            text-align: center;   
+            border: 2px solid;
+           width: 280px;
+           height: 570px;
+           margin: auto;
+           padding: 20px;
+           border-radius: 10px;
+           background-color: burlywood;
+        }
+        input{
+            width: 40px;
+            background-color: aquamarine;
+            color: rgb(0, 0, 0);
+            border: 2px solid;
+            padding: 5px;
+            margin: 5px;
+            font-weight: bolder;
+            font-size: small;
+        }
+        #result{
+            background-color: rgb(143, 230, 230);
+            border: 3px solid;
+            width: 250px;
+            padding: 8px;
+            text-align: center;
+        }
+        input:hover{
+            box-shadow: 2px 2px 0px 1px rgb(235, 71, 71);
+        }
+        #erase{
+            background-color: orangered;
+            width: 50px;
+            height: 35px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="center">
+    <h1>Calculator</h1>
+  
+    <input type="text" placeholder="Enter Number:-" id="result">
+    <br>
+    <br>
+    <input type="button" value="1" onclick="show('1')">
+    <input type="button" value="2" onclick="show('2')">
+    <input type="button" value="3" onclick="show('3')">
+    <input type="button" value="+" onclick="show('+')">
+    <br>
+    <br>
+    <input type="button" value="4" onclick="show('4')">
+    <input type="button" value="5" onclick="show('5')">
+    <input type="button" value="6" onclick="show('6')">
+    <input type="button" value="-" onclick="show('-')">
+    <br>
+    <br>
+    <input type="button" value="7" onclick="show('7')">
+    <input type="button" value="8" onclick="show('8')">
+    <input type="button" value="9" onclick="show('9')">
+    <input type="button" value="*" onclick="show('*')">
+    <br>
+    <br>
+    <input type="button" value="/" onclick="show('/')">
+    <input type="button" value="0" onclick="show('0')">
+    <input type="button" value="." onclick="show('.')">
+    <input type="button" value="=" onclick="solve('=')">
+    <br><br>
+    <input type="button" id="clr" value="clr" onclick="clr()">
+    <button id="erase" onclick="eraseclick()">&#9003;</button>
+    </div>
+    
+</body>
+<script src="cal.js">
+</script>
+</html>
